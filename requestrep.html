@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local 701 - Requestrep</title>
+    <style>
+        body {
+            background: url('gears.jpg') no-repeat center center/cover;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 3%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header-text {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 15px #000000, 0 0 30px #000000, 0 0 15px #ff9000, 0 0 30px #ff9000;
+        }
+        .link-section {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        .link-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px #000000, 0 0 30px #000000, 0 0 15px #ff9000, 0 0 30px #ff9000;
+        }
+        .link-description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #ffb142;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-button {
+            margin-top: 40px;
+            background-color: #ff9000;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            font-size: 1.25rem;
+        }
+        .back-button:hover {
+            background-color: #ffb142;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
+        }
+        @media (max-width: 768px) {
+            .header-text {
+                font-size: 2.5rem;
+            }
+            .link-title {
+                font-size: 1.75rem;
+            }
+            .link-description {
+                font-size: 1rem;
+            }
+            .back-button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-text">Request Representation</div>
+    
+    <div class="link-section">
+        <div class="link-title">Grievance Machine</div>
+        <div class="link-description">Request assistance and representation to file a formal grievance if you feel your rights have been violated or if there has been a breach of the collective bargaining agreement.<br><br><a href="grievance_machine.html">Access Grievance Machine</a>
+        </div>
+    </div>
+
+    <div class="link-section">
+        <div class="link-title">Whistleblower/Tip Line</div>
+        <div class="link-description">Report issues anonymously if you choose. The whistleblower/tip line ensures your privacy while raising concerns about workplace practices.<br><br><a href="#">Access Tip Line</a>
+        </div>
+    </div>
+
+    <a href="home.html" class="back-button">Back to Home</a>
+</body>
+</html>

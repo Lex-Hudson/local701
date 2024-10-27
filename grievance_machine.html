@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local 701 - GrievanceMachine</title>
+    <style>
+        body {
+            background: url('gears.jpg') no-repeat center center/cover;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 3%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header-text {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 15px #000000, 0 0 30px #000000, 0 0 15px #ff9000, 0 0 30px #ff9000;
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        .form-field {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        label {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        input[type="text"], textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        .submit-button {
+            margin-top: 20px;
+            background-color: #ff9000;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            font-size: 1.25rem;
+            cursor: pointer;
+            border: none;
+        }
+        .submit-button:hover {
+            background-color: #ffb142;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
+        }
+        .back-button {
+            margin-top: 40px;
+            background-color: #ff9000;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            font-size: 1.25rem;
+        }
+        .back-button:hover {
+            background-color: #ffb142;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
+        }
+        @media (max-width: 768px) {
+            .header-text {
+                font-size: 2.5rem;
+            }
+            label {
+                font-size: 1rem;
+            }
+            .submit-button, .back-button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const radios = document.getElementsByName('attempt_resolve');
+            let attemptedResolve = false;
+            for (let i = 0; i < radios.length; i++) {
+                if (radios[i].checked && radios[i].value === 'yes') {
+                    attemptedResolve = true;
+                    break;
+                }
+            }
+            if (!attemptedResolve) {
+                alert('You must attempt to formally resolve the issue before submitting.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="header-text">Grievance Machine</div>
+    
+    <div class="form-container">
+        <form action="mailto:pek-afge701-s@bop.gov" method="post" onsubmit="return validateForm()">
+            <div class="form-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+                <label>Did you attempt to formally resolve?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="attempt_resolve" value="yes"> Yes</label>
+                    <label><input type="radio" name="attempt_resolve" value="no"> No</label>
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="details">Details of Violation and Result of Informal Resolution Attempt</label>
+                <textarea id="details" name="details" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit Grievance</button>
+        </form>
+    </div>
+
+    <a href="requestrep.html" class="back-button">Back to Request Representation</a>
+    <a href="home.html" class="back-button">Home</a>
+</body>
+</html>

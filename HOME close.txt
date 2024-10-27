@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local 701 - Home Page</title>
+    <style>
+        body {
+            background: url('gears.jpg') no-repeat center center/cover;
+            font-family: 'Roboto', sans-serif;
+            color: #ff9000; text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000;
+            text-align: center;
+            padding: 3%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header-text {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 15px #000000, 0 0 30px #000000, 0 0 15px #ff9000, 0 0 30px #ff9000;
+        }
+        .section-link {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ff9000; text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000; text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        .section-link:hover {
+            background-color: #ffb142;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
+        }
+        .know-your-rights {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 15px #000000, 0 0 30px #000000, 0 0 15px #ff9000, 0 0 30px #ff9000;
+            margin-top: 60px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .header-text {
+                font-size: 2.5rem;
+            }
+            .section-link {
+                font-size: 1.2rem;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+        <a href="#" class="section-link" style="text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000">Forms and Documents</a>
+        <a href="#" class="section-link" style="text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000">Membership Benefits</a>
+        <a href="#" class="section-link" style="text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000">Resources and Training</a>
+        <a href="#" class="section-link" style="text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000">Events and News</a>
+        <a href="agreements.html" class="section-link" style="text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000">Agreements</a>
+        <a href="#" class="section-link" style="text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000">News</a>
+        <a href="requestrep.html" class="section-link" style="text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #ff9000, 0 0 25px #ff9000">Request Representative</a>
+    </div>
+    
+</body>
+</html>
